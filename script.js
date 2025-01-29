@@ -15,3 +15,9 @@ function moveSlide(direction) {
   const carousel = document.querySelector('.carousel');
   carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
+
+let input_element = document.querySelector('input');
+
+input_element.addEventListener('keyup', () => {
+  input_element.setAttribute('value', input_element.value);
+});
